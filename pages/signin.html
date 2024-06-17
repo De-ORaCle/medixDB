@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>medixDB - Revolutionalizing Healthcare Record Management</title>
+    <title>Sign In - medixDB</title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
                     <p>medixDB</p>
                 </div>
                 <div class="main-nav">
-                    <div class="nav-link"><a href="#">Home</a></div>
+                    <div class="nav-link"><a href="../index.html">Home</a></div>
                     <div class="nav-link"><a href="#">Product</a></div>
                     <div class="nav-link"><a href="#">Pricing</a></div>
                     <div class="nav-link"><a href="#">Contact</a></div>
@@ -46,21 +46,27 @@
             <div class="main-descp">
                 <div class="md-content">
                     <div class="left-hero">
-                        <div class="lh-content">
+                        <div class="lh-content signincontent">
                             <p class="section-highlight">Increasing Healthcare Productivity</p>
-                            <h1 class="hero-descp">Revolutionize Healthcare Records Management</h1>
-                            <p class="hero-follow-up">Efficient, secure, and centralized health records for healthcare facilities.</p>
-                            <div class="hero-cta">
-                                <div class="primary-cta">
-                                    <a href="#">
-                                        <p>Get Started Now</p>
-                                    </a>
-                                </div>
-                                <div class="secondary-cta">
-                                    <a href="#">
-                                        <p>Learn More</p>
-                                    </a>
-                                </div>
+                            <h2 class="hero-descp">Sign In</h2>
+                            <div class="signin-form">
+                                <form id="signin">
+                                    <input type="text" id="medixid" placeholder="Hospital medixDB ID" required>
+                                    <select name="usertype" id="usertype" required>
+                                        <option value="User Type" disabled selected value>User Type</option>
+                                        <option value="Hospital Administrator">Hospital Administrator</option>
+                                        <option value="Receptionist">Receptionist</option>
+                                        <option value="Doctor">Doctor</option>
+                                    </select>
+                                    <input type="email" id="useremail" placeholder="Email Address" required>
+                                    <input type="password" id="userpassword" placeholder="Password" required>
+                                    <button type="submit">Log In</button>
+                                </form>
+                            </div>
+                            <div class="no-account">
+                                <a href="#">
+                                    <p>Don’t have an account? <span>Sign Up</span>.</p>
+                                </a>
                             </div>
                         </div>
                     </div>

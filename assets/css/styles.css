@@ -4,11 +4,14 @@ body {
     margin: 0;
 }
 
-button {
+button,
+select {
     font-family: 'Montserrat', sans-serif;
 }
 
-input::placeholder {
+input::placeholder,
+option,
+select {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -781,4 +784,59 @@ footer {
         align-items: center;
         justify-content: center;
     }
+}
+
+
+
+
+
+/* SIGN IN */
+
+.signincontent h2 {
+    margin-bottom: 12px;
+}
+
+.signincontent input,
+.signincontent select,
+.signincontent button {
+    display: block;
+}
+
+.signincontent input,
+.signincontent select {
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    background: #FFF;
+    width: 440px;
+    margin-bottom: 12px;
+}
+
+.signincontent button {
+    cursor: pointer;
+    height: 48px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #23A6F0;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.signincontent button:hover {
+    color: #23A6F0;
+    background-color: #FFFFFF;
+    border: 1px solid #23A6F0;
+    transition: 0.5s;
+}
+
+.no-account p {
+    color: #737373;
+    font-size: 14px;
+}
+
+.no-account span {
+    color: #23A6F0;
 }
