@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
 input::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -740,4 +744,41 @@ footer {
 
 .socials img {
     width: 20px;
+}
+
+
+
+/* SMALLER SCREENS */
+
+.smaller-screens {
+    display: none;
+    margin: 0 28px;
+}
+
+.smaller-screens p {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #737373;
+}
+
+@media (max-width: 1080px) {
+    header,
+    footer,
+    .hero-section,
+    .partners-section,
+    .approach-section,
+    .leading-records,
+    .pricing-plans,
+    .client-reviews,
+    .newsletter-section {
+        display: none;
+    }
+
+    .smaller-screens {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
