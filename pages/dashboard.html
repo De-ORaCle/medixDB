@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Axios Library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <section class="sidebar">
@@ -95,7 +98,7 @@
                         </a>
                     </div>
                     <div class="indv-nav">
-                        <a href="../index.html">
+                        <a class="logout-button">
                             <img src="../assets/images/dashboard/.svg">
                             <p>Logout</p>
                         </a>
@@ -128,8 +131,8 @@
                 <div class="user">
                     <img src="../assets/images/dashboard/man-438081_960_720.svg">
                     <div class="namerole">
-                        <p class="user-mainname">Bukola Olapade</p>
-                        <p class="userrole">Admin</p>
+                        <p class="user-mainname"><span id="fulllname"></p>
+                        <p id="usertypecontent" class="userrole">Admin</p>
                     </div>
                 </div>
             </div>
@@ -138,7 +141,7 @@
     <section class="dashboard-homepage">
         <div class="welcome-prompt">
             <div class="welcome">
-                <h5>Welcome <span id="firstname">Bukola</span>,</h5>
+                <h5>Welcome <span id="firstname">...</span>,</h5>
             </div>
             <div class="new-patient">
                 <button id="add-new-patient-btn">
@@ -326,6 +329,9 @@
             <p>We understand your enthusiasm towards our product but at this stage we only work with bigger screens. Sorry for the inconvinience.</p>
         </div>
     </section>
+    <script src="../assets/js/index.js"></script>
     <script src="../assets/js/popup.js"></script>
+    <script src="../assets/js/filldetails.js"></script>
+    <script src="../assets/js/logout.js"></script>
 </body>
 </html>
