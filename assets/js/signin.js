@@ -43,7 +43,7 @@ document.getElementById("signin").addEventListener("submit", function(event) {
                 localStorage.setItem("email", email);
                 localStorage.setItem("password", password);
                 localStorage.setItem("logValue", "0");
-                window.location.href = "dashboard.html";
+                window.location.href = "../dashboard/index.html";
             })
             .catch(error => console.error('Error updating log:', error));
         }

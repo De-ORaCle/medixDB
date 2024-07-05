@@ -9,7 +9,7 @@ const fulllname = firstname + " " + lastname
 
 
 // Set the values of the HTML elements
-document.getElementById('firstname').textContent = firstname;
 document.getElementById('fulllname').textContent = fulllname;
 document.getElementById('usertypecontent').textContent = usertype;
+document.getElementById('firstname').textContent = firstname;
 // document.getElementById('useremail').textContent = email;

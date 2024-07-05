@@ -50,7 +50,7 @@ document.getElementById("signup").addEventListener("submit", function(event) {
                 localStorage.setItem("logValue", "0");
                 regSubmit.innerText = defaultText;
                 regSubmit.disabled = false;
-                window.location.href = "dashboard.html";
+                window.location.href = "../dashboard/index.html";
             })
             .catch(error => console.error('Error:', error));
         }
